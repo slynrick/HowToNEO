@@ -3,13 +3,13 @@ using Neo.SmartContract.Framework.Services.Neo;
 using System;
 using System.Numerics;
 
-namespace NeoContract1
+namespace NeoContractExample
 {
     /**
         Snippet: Notify With Constantly ByteArray
         
     */
-    public class Contract1 : SmartContract
+    public class NeoContractExample : SmartContract
     {
 
 		public static void Main()
