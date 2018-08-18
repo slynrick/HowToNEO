@@ -19,7 +19,7 @@ namespace NeoContractExample
 		{
 			Transaction tx = (Transaction)ExecutionEngine.ScriptContainer;
             byte[] rand = tx.Hash;
-            return = rand.AsBigInteger();
+            return rand.AsBigInteger();
 		}
 
 		public static BigInteger Main()
