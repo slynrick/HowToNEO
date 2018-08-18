@@ -11,28 +11,28 @@ namespace NeoContractExample
     */
     public class NeoContractExample : SmartContract
     {		
-		public static byte[] GetTransReceiver()
+	public static byte[] GetTransReceiver()
         {
-            return ExecutionEngine.ExecutingScriptHash;
+		return ExecutionEngine.ExecutingScriptHash;
         }
 
         public static byte[] GetTransSender()
         {
-            Transaction tx = (Transaction)ExecutionEngine.ScriptContainer;
-            TransactionInput[] inputs = tx.GetInputs();
-            if (inputs.Length > 0)
-            {
-                Transaction tx = Blockchain.GetTransaction(inputs[0].PrevHash);
-                TransactionOutput output = tx.GetOutputs();
-                return output.ScriptHash;
-            }
-            return null;
+		Transaction tx = (Transaction)ExecutionEngine.ScriptContainer;
+		TransactionInput[] inputs = tx.GetInputs();
+		if (inputs.Length > 0)
+		{
+			Transaction tx = Blockchain.GetTransaction(inputs[0].PrevHash);
+			TransactionOutput output = tx.GetOutputs();
+			return output.ScriptHash;
+		}
+		return null;
         }
 
-		public static void Main()
+	public static void Main()
         {
-            Runtime.Notify(GetTransSender());
-			Runtime.Notify(GetTransReceiver());
+		Runtime.Notify(GetTransSender());
+		Runtime.Notify(GetTransReceiver());
         }
     }
 }
