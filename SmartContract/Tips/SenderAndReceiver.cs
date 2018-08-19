@@ -10,8 +10,8 @@ namespace NeoContractExample
         Snippet: Get Sender or Receiver of Assets Attached
     */
     public class NeoContractExample : SmartContract
-    {		
-	    public static byte[] GetTransReceiver()
+    {
+        public static byte[] GetTransReceiver()
         {
 	        return ExecutionEngine.ExecutingScriptHash;
         }

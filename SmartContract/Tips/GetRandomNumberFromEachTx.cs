@@ -14,15 +14,14 @@ namespace NeoContractExample
     */
     public class NeoContractExample : SmartContract
     {
-		
-	    public static BigInteger GetRandomNumber()
-	    {
-		    Transaction tx = (Transaction)ExecutionEngine.ScriptContainer;
-		    byte[] rand = tx.Hash;
-		    return rand.AsBigInteger();
-	    }
+        public static BigInteger GetRandomNumber()
+        {
+	        Transaction tx = (Transaction)ExecutionEngine.ScriptContainer;
+	        byte[] rand = tx.Hash;
+	        return rand.AsBigInteger();
+        }
 
-	    public static BigInteger Main()
+        public static BigInteger Main()
         {
             return GetRandomNumber();
         }
