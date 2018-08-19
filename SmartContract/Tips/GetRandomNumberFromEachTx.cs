@@ -17,7 +17,9 @@ namespace NeoContractExample
         public static BigInteger GetRandomNumber(int size_in_bytes)
         {
             Transaction tx = (Transaction)ExecutionEngine.ScriptContainer;
-            byte[] rand = tx.Hash.Range(0, size_in_bytes);
+            Header bl = Blockchain.GetHeader(Blockchain.GetHeight());
+            byte[] hash = Hash256(bl.Hash.Concat(tx.Hash));
+            byte[] rand = hash.Range(0, size_in_bytes);
             return rand.AsBigInteger();
         }
 
