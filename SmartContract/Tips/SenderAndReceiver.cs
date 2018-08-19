@@ -16,7 +16,7 @@ namespace NeoContractExample
 		return ExecutionEngine.ExecutingScriptHash;
         }
 
-         public static byte[] GetTransSender()
+        public static byte[] GetTransSender()
         {
     		Transaction tx = (Transaction)ExecutionEngine.ScriptContainer;
     		TransactionInput[] inputs = tx.GetInputs();
