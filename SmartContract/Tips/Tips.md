@@ -5,7 +5,9 @@ This is how to deal with problems such as Runtime randomness, how to get amount 
 ## Problems Solved
 
 ### CSharp
- - [Get Random Number at Runtime](GetRandomNumberFromEachTx.cs)
+ - Get Random Number at Runtime
+    - [One random number per Transaction](GetRandomNumberFromEachTx.cs)
+    - [One random number per call inside the transaction](GetRandomNumberFromEachCall.cs)
  - [Get GAS or NEO Attached](GetGASorNEOAttached.cs)
  - [Get Sender and Receiver of Smart Contract](SenderAndReceiver.cs)
  - [Notify With Constantly ByteArray](NotifyWithByteArray.cs)
