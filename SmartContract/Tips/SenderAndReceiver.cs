@@ -16,17 +16,17 @@ namespace NeoContractExample
 		return ExecutionEngine.ExecutingScriptHash;
         }
 
-        public static byte[] GetTransSender()
+         public static byte[] GetTransSender()
         {
-		Transaction tx = (Transaction)ExecutionEngine.ScriptContainer;
-		TransactionInput[] inputs = tx.GetInputs();
-		if (inputs.Length > 0)
-		{
-			Transaction tx = Blockchain.GetTransaction(inputs[0].PrevHash);
-			TransactionOutput output = tx.GetOutputs();
-			return output.ScriptHash;
-		}
-		return null;
+    		Transaction tx = (Transaction)ExecutionEngine.ScriptContainer;
+    		TransactionInput[] inputs = tx.GetInputs();
+    		if (inputs.Length > 0)
+    		{
+    			Transaction tx2 = (Transaction)Blockchain.GetTransaction(inputs[0].PrevHash);
+    			TransactionOutput[] output = tx2.GetOutputs();
+    			return output[0].ScriptHash;
+    		}
+    		return null;
         }
 
 	public static void Main()
