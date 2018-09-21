@@ -109,4 +109,6 @@ Try to do more with less code as possible because when you compile it and turns 
 
 Take into acount that below 10GAS the tax of executing the code is free, so use that as your limit!!
 
+**Check the system fees [here](http://docs.neo.org/en-us/sc/systemfees.html)**
+
 [Back](../SmartContract.md)
