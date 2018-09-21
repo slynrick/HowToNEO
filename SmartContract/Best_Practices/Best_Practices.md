@@ -100,7 +100,7 @@ Take into account that the data you're getting from the blockchain when you're i
 
 So those information is public for everyone, if it was the block that has the invocation transaction you could at least have some information at Runtime.
 
-## Make verything simple
+## Make everything simple
 
 Try to do your  DApp as simple as possible. Why?
 The anser is simple: more code you have more expensive the invocation is!!

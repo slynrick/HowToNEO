@@ -26,7 +26,7 @@ You can deploy you code into 3 differents kinds of Networks:
 
 The deal is go from the bottom to the **TOP**.
 
-When you're trying to test your coe, try to do it first on the private net that you have all the control, after that go to the Test NET for a larger scale test and finally, when everything is working as it should go to the Main NET!!
+When you're trying to test your code, try to do it first on the private net that you have all the control, after that go to the Test NET for a larger scale test and finally, when everything is working as it should go to the Main NET!!
 
 For you to set up your own private net, check the official tutorial [here](http://docs.neo.org/en-us/network/private-chain.html)
 
