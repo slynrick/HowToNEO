@@ -11,7 +11,7 @@ There are many utilities for this types and it can make your life much easier wh
 
 One of the most precious utilities methods is the convertion between these 3 types!
 
-> OBS: the BigInteger type can be only an 32bit number.
+> OBS: the BigInteger type is limited to a 32 bytes number (which is much bigger than usual int 4B and long 8B). See MaxSizeForBigInteger on ApplicationEngine.
 
 ## Data Structure
 
